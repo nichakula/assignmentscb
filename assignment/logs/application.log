@@ -1,0 +1,85 @@
+2020-01-23 00:29:59 ERROR org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [ SELECT name,surname,to_char( username,date_of_birth, 'DD/MM/YYYY') as date_of_birth FROM PUBLIC.USER WHERE USERNAME = ? ]; nested exception is org.postgresql.util.PSQLException: ERROR: function to_char(character varying, date, unknown) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 22
+2020-01-23 00:31:28 ERROR org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [ INSERT INTO PUBLIC.ORDER (username,order_id,order_date_time)  VALUES (?,?,now()]; nested exception is org.postgresql.util.PSQLException: ERROR: syntax error at end of input
+  Position: 83
+2020-01-23 02:15:24 INFO  begin addEmployee
+2020-01-23 02:15:24 INFO  finish login
+2020-01-23 02:32:08 INFO  begin addEmployee
+2020-01-23 02:32:09 INFO  finish login
+2020-01-23 20:15:01 INFO  begin addEmployee
+2020-01-23 20:15:02 INFO  finish login
+2020-01-23 20:15:32 INFO  begin getUser
+2020-01-23 20:15:32 INFO  finish getUser
+2020-01-23 20:16:22 INFO  begin addEmployee
+2020-01-23 20:16:23 INFO  finish login
+2020-01-23 20:16:45 INFO  begin addEmployee
+2020-01-23 20:16:46 INFO  finish login
+2020-01-23 20:16:46 INFO  begin getUser
+2020-01-23 20:16:46 INFO  finish getUser
+2020-01-23 20:20:33 INFO  begin addEmployee
+2020-01-23 20:20:34 INFO  finish login
+2020-01-23 20:21:38 INFO  begin getUser
+2020-01-23 20:21:38 INFO  finish getUser
+2020-01-23 20:22:25 INFO  begin getUser
+2020-01-23 20:22:25 INFO  finish getUser
+2020-01-23 20:32:44 INFO  begin books
+2020-01-23 20:32:46 INFO  finish books
+2020-01-23 20:32:46 INFO  begin addUser
+2020-01-23 20:32:47 ERROR org.springframework.dao.DuplicateKeyException: PreparedStatementCallback; SQL [ INSERT INTO PUBLIC.USER (username,password,name,surname,date_of_birth)  VALUES (?,?,?,?,to_date(?,'DD/MM/YYYY')) ]; ERROR: duplicate key value violates unique constraint "user_pkey"
+  Detail: Key (username)=(ton1) already exists.; nested exception is org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "user_pkey"
+  Detail: Key (username)=(ton1) already exists.
+2020-01-23 20:32:47 INFO  begin addEmployee
+2020-01-23 20:32:47 INFO  begin addEmployee
+2020-01-23 20:32:47 INFO  finish login
+2020-01-23 20:32:47 INFO  begin getUser
+2020-01-23 20:32:47 INFO  finish getUser
+2020-01-23 20:32:47 INFO  begin deleteUser
+2020-01-23 20:32:47 INFO  finish deleteUser
+2020-01-23 20:34:21 INFO  begin books
+2020-01-23 20:34:24 INFO  finish books
+2020-01-23 20:34:24 INFO  begin addUser
+2020-01-23 20:34:24 INFO  finish addUser
+2020-01-23 20:34:24 INFO  begin addEmployee
+2020-01-23 20:34:24 INFO  begin addEmployee
+2020-01-23 20:34:24 INFO  finish login
+2020-01-23 20:34:24 INFO  begin getUser
+2020-01-23 20:34:24 INFO  finish getUser
+2020-01-23 20:34:24 INFO  begin deleteUser
+2020-01-23 20:34:24 INFO  finish deleteUser
+2020-01-23 20:35:40 INFO  begin books
+2020-01-23 20:35:42 INFO  finish books
+2020-01-23 20:35:42 INFO  begin addUser
+2020-01-23 20:35:42 INFO  finish addUser
+2020-01-23 20:35:42 INFO  begin addEmployee
+2020-01-23 20:35:42 INFO  begin addEmployee
+2020-01-23 20:35:42 INFO  finish login
+2020-01-23 20:35:42 INFO  begin getUser
+2020-01-23 20:35:42 INFO  finish getUser
+2020-01-23 20:35:42 INFO  begin deleteUser
+2020-01-23 20:35:42 INFO  finish deleteUser
+2020-01-23 20:36:03 INFO  begin getUser
+2020-01-23 20:36:28 INFO  begin addUser
+2020-01-23 20:36:28 INFO  finish addUser
+2020-01-23 20:36:33 INFO  begin addEmployee
+2020-01-23 20:36:33 INFO  finish login
+2020-01-23 20:36:57 INFO  begin orders
+2020-01-23 20:36:58 INFO  finish orders
+2020-01-23 20:40:00 INFO  begin books
+2020-01-23 20:40:03 INFO  finish books
+2020-01-23 20:40:03 INFO  begin addUser
+2020-01-23 20:40:03 ERROR org.springframework.dao.DuplicateKeyException: PreparedStatementCallback; SQL [ INSERT INTO PUBLIC.USER (username,password,name,surname,date_of_birth)  VALUES (?,?,?,?,to_date(?,'DD/MM/YYYY')) ]; ERROR: duplicate key value violates unique constraint "user_pkey"
+  Detail: Key (username)=(ton1) already exists.; nested exception is org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "user_pkey"
+  Detail: Key (username)=(ton1) already exists.
+2020-01-23 20:40:03 INFO  begin addEmployee
+2020-01-23 20:40:03 INFO  begin addEmployee
+2020-01-23 20:40:03 INFO  finish login
+2020-01-23 20:40:03 INFO  begin getUser
+2020-01-23 20:40:03 INFO  finish getUser
+2020-01-23 20:40:03 INFO  begin deleteUser
+2020-01-23 20:40:03 INFO  finish deleteUser
+2020-01-23 20:42:31 INFO  begin addEmployee
+2020-01-23 20:42:44 INFO  begin addUser
+2020-01-23 20:42:44 INFO  finish addUser
+2020-01-23 20:42:48 INFO  begin addEmployee
+2020-01-23 20:42:48 INFO  finish login
